@@ -1,0 +1,28 @@
+.access img{
+    opacity: 0.5;
+    width: 100%;
+    position: relative;
+}
+
+.form_access{
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 40%;
+    border-radius: 2px;
+    opacity: 0.9;
+}
+
+.form_access p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form_access img{
+    width: 40rem;
+    height: 15rem;
+    margin-left: 50%;
+    transform:translateX(-50%); 
+    margin-bottom: 3rem;
+}

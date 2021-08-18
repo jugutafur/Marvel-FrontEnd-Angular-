@@ -1,0 +1,38 @@
+<div class="access">
+    <img src="../../../assets/imgGeneral/access2.jpg">
+</div>
+
+<div class="form_access">
+    <p>SIGN IN WITH YOUR EMAIL</p>
+    <img src="../../../assets/imgGeneral/access.jpg">
+    <form [formGroup]='formularioLogin'>
+        <div class="mb-3">
+            <input 
+            [class.is-invalid]="formularioLogin.get('email').touched && formularioLogin.get('email').invalid"
+            type="email" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp" 
+            placeholder="Email address characteres(5, 100) " 
+            formControlName="email">
+        </div>
+        <div class="mb-3">
+            <input 
+            [class.is-invalid]="formularioLogin.get('password').touched && formularioLogin.get('password').invalid"
+            type="password" 
+            class="form-control" 
+            id="exampleInputPassword1" 
+            placeholder="Password min characteres= 4" 
+            formControlName="password">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button 
+        (click)="crearUsuario()"
+        [disabled]="formularioLogin.invalid" 
+        type="submit" 
+        class="btn btn-primary">Sing in</button>
+    </form>
+</div>

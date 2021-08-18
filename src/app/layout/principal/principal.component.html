@@ -1,0 +1,31 @@
+<app-banner (salida)="leerdesdebanner($event)"></app-banner>
+
+<!-- <div class="pintar">
+    <p>{{var_seccion}}</p>
+</div> -->
+
+<div class="carousel">
+    <div class="carousel__container">
+        <div 
+        *ngFor="let i of menus" 
+        class="carousel-item">
+            <img 
+            class="carousel-item__img" 
+            src="{{i.thumbnail.path}}.{{i.thumbnail.extension}}">
+            <div class="carousel-item__details">
+                <div>
+                    <img class="carousel-item__details--img" 
+                    src="../../../assets/imgGeneral/plus-icon.png" a
+                    lt="Plus Icon"> 
+                </div>
+                <p class="carousel-item__details--title">{{i.name}}</p>
+                <p class="carousel-item__details--subtitle">{{i.description | slice:0:50}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="img">
+</div>
+
+<app-footer></app-footer>

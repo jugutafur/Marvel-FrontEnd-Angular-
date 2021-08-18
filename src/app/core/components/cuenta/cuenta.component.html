@@ -1,0 +1,11 @@
+<p>Bienvenido {{lista_Usuarios["name"]}}</p>
+<ul>
+    <li>
+        <p>id : {{lista_Usuarios["id"]}}</p>
+        <p>primernombre : {{lista_Usuarios["name"]}}</p>
+        <p>segundonombre : {{lista_Usuarios["identitication"]}}</p>
+        <p>correo : {{lista_Usuarios["email"]}}</p>
+        <p>clave : {{lista_Usuarios["password"]}}</p>
+        <button (click)="updateUsers()">Editar</button>
+    </li>
+</ul>
