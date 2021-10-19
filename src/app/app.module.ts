@@ -11,6 +11,7 @@ import { AccessModule } from './core/components/access/access.module'
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './layout/principal/principal.component';
 import { CuentaComponent } from './core/components/cuenta/cuenta.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CuentaComponent } from './core/components/cuenta/cuenta.component';
     HttpClientModule,
     ReactiveFormsModule,
     AccessModule,
-    RegisterModule
+    RegisterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

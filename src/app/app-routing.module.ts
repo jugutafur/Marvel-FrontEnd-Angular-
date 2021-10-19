@@ -27,6 +27,10 @@ const routes: Routes = [
     path:'cuenta/:id',
     canActivate: [GuardianAccessGuard],
     component: CuentaComponent
+  },
+  {
+    path: 'Admin',
+    loadChildren : ()=> import('./core/components/admin/admin.module').then(m=>m.AdminModule)
   }
   // {
   //   path:'menuComponent',
