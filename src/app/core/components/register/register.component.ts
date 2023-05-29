@@ -13,21 +13,21 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/*
   crearUsuario(){
     this.apiService.createUser(this.miformulario.value)
     .subscribe(newUserX=>{
       console.log(newUserX);
     })
     alert("usuario create");
-  }
+  }*/
 
   miformulario = new FormGroup({
     name : new FormControl('',Validators.required),
     identification : new FormControl('',Validators.required),
     email : new FormControl('',[
-      Validators.email, 
-      Validators.required, 
+      Validators.email,
+      Validators.required,
       Validators.minLength(5),
       Validators.maxLength(100)]),
     password : new FormControl('',
